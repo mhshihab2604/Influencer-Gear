@@ -51,7 +51,13 @@ nav a{
     color: #3A3A3A;
     font-size: 1rem;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+.feature-description{
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
 }
 .btn-1{
     border-radius: 41px;
@@ -59,7 +65,7 @@ nav a{
     border: none;
     padding: 10px 24px;
     gap: 8px;
-    margin-top: 50px;
+    margin-top: 30px;
     color: #FFF;
     font-size: 1rem;
     font-weight: 700;
@@ -67,8 +73,58 @@ nav a{
 .img-1{
     background-image: url('images/Circle\ design.svg');
 }
+/* sponsors section styles */
+.sponsors-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 100px 0px;
+}
+.feature-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.feature-tittle{
+    color: #0A0826;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.btn-2{
+    display: inline-flex;
+    padding: 10px 24px;
+    gap: 8px;
+    border: none;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.img-2{
+    width: 404px;
+    height: 270px;
+    border-radius: 7px;
+}
+/* footer section styles */
+.footer-section{
+    text-align: center;
+    background-color:#0A0826;
+    height: 240px;
+    color: white;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+.icon i{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
 @media screen and (max-width: 576px) {
-    nav{
+    nav,.feature-section{
         flex-direction: column;
     }
     nav ul{
@@ -80,19 +136,41 @@ nav a{
     .img-1{
         width: 120%;
     }
-    .banner-content{
+    .banner-content,.feature-section{
         text-align: center;
     }   
+    .sponsors-section{
+        flex-wrap: wrap;
+    }
+    .img-1{
+        width: 100%;
+    }
+    .footer-section{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
 }
 @media screen and (min-width:576px) and (max-width: 992px){
-    nav{
+    nav,.feature-section{
         flex-direction: column;
     }
     .banner{
         flex-direction: column-reverse;
     }
-    .banner-content{
+    .banner-content,.feature-section{
         text-align: center;
+    }
+    .sponsors-section{
+        flex-wrap: wrap;
+    }
+    .img-1{
+        width: 100%;
+    }
+    .footer-section{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
     }
 
 }
